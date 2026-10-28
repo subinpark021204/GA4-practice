@@ -16,7 +16,7 @@ var GA4_MEASUREMENT_ID = 'G-BPSN38RQ9P';
 */
 (function () {
   var id = (GA4_MEASUREMENT_ID || '').trim();
-  window.GA4_READY = /^G-[A-Z0-9]{4,}$/.test(id) && id !== 'G-BPSN38RQ9P';
+  window.GA4_READY = /^G-[A-Z0-9]{4,}$/.test(id) && id !== 'G-XXXXXXXXXX';
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = function () { window.dataLayer.push(arguments); };
