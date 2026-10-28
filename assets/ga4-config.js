@@ -1,11 +1,11 @@
 /*
   ============================================================
-  ① 실습 1단계: 아래 따옴표 안의 G-XXXXXXXXXX 를 내 GA4 "측정 ID"로 바꾸세요.
+  ① 실습 1단계: 아래 따옴표 안의 G-BPSN38RQ9P 를 내 GA4 "측정 ID"로 바꾸세요.
      (GA4 → 관리 → 데이터 스트림 → 내 스트림 → 측정 ID)
      이 한 줄만 바꾸면 모든 페이지에 GA4가 연결됩니다.
   ============================================================
 */
-var GA4_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+var GA4_MEASUREMENT_ID = 'G-BPSN38RQ9P';
 
 /*
   아래는 GA4가 알려 주는 "Google 태그(gtag.js)" 코드와 똑같은 일을 합니다.
@@ -16,7 +16,7 @@ var GA4_MEASUREMENT_ID = 'G-XXXXXXXXXX';
 */
 (function () {
   var id = (GA4_MEASUREMENT_ID || '').trim();
-  window.GA4_READY = /^G-[A-Z0-9]{4,}$/.test(id) && id !== 'G-XXXXXXXXXX';
+  window.GA4_READY = /^G-[A-Z0-9]{4,}$/.test(id) && id !== 'G-BPSN38RQ9P';
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = function () { window.dataLayer.push(arguments); };
